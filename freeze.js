@@ -1,9 +1,9 @@
 const bottle = {
-    color: 'yellow',
-    price: 50,
-    isClean: true,
-    capacity: 1
-}
+  color: "yellow",
+  price: 50,
+  isClean: true,
+  capacity: 1,
+};
 console.log(bottle);
 // Object.seal(bottle);
 Object.freeze(bottle);
@@ -12,7 +12,6 @@ bottle.price = 100;
 bottle.height = 12;
 console.log(bottle);
 
-
 const keys = Object.keys(bottle);
 // console.log(keys);
 const values = Object.values(bottle);
@@ -20,3 +19,6 @@ const values = Object.values(bottle);
 
 const pair = Object.entries(bottle);
 // console.log(pair);
+
+const getGirlFriend = (name = "chokina") => name;
+console.log(getGirlFriend());
